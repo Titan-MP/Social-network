@@ -1,4 +1,6 @@
 
 module.exports = app => {
-    app.use((req,res) => `<h1>Wrong Route!</h1>`)
+    app.use((req, res) => {
+        res.status(404).send("<h1>404 Error!</h1>")
+    })
 };
