@@ -11,8 +11,8 @@ router
 router
 .route('/:id')
 .get(getThoughtById)
-// .put(updateThought)
-// .delete(deleteThought)
+.put(updateThought)
+.delete(deleteThought)
 
 
 module.exports = router;
